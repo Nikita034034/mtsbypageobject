@@ -288,7 +288,7 @@ public class MainPage {
 
     public String getCvcPlaceholder() {
         WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(
-            By.xpath("//input[contains(@autocomplete, 'cc-csc') or contains(@name, 'verification_value') or contains(@formcontrolname, 'cvc')]"
+                By.xpath("//input[contains(@autocomplete, 'cc-csc') or contains(@name, 'verification_value') or contains(@formcontrolname, 'cvc')]")
         ));
         String placeholder = input.getAttribute("placeholder");
         if (placeholder != null && !placeholder.isEmpty()) {
